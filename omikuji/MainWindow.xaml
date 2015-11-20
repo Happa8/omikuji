@@ -10,6 +10,8 @@
         <Label x:Name="Title" Content="開運御神籤" HorizontalAlignment="Left" Height="85" Margin="10,10,0,0" VerticalAlignment="Top" Width="330" FontSize="64"/>
         <Button x:Name="Start" Content="御神籤を引く" HorizontalAlignment="Left" Height="40" Margin="240,200,0,0" VerticalAlignment="Top" Width="160" FontSize="24" Click="Start_Click"/>
         <Label x:Name="text" Content="君は幸運をgetできるか！？" HorizontalAlignment="Left" Height="35" Margin="80,100,0,0" VerticalAlignment="Top" Width="245" FontSize="18.667"/>
+        <Button x:Name="secret" Content="裏" HorizontalAlignment="Left" Height="20" Margin="405,220,0,0" VerticalAlignment="Top" Width="25" Click="secret_Click"/>
+        <CheckBox x:Name="renzoku" Content="連続モード" HorizontalAlignment="Left" Height="20" Margin="80,280,0,0" VerticalAlignment="Top" Width="160" Click="renzoku_Click"/>
 
     </Grid>
 </Window>
