@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Forms;
 
 namespace omikuji
 {
@@ -38,16 +37,17 @@ namespace omikuji
 
         }
 
-        private void renzoku_Click(object sender, RoutedEventArgs e)
+        
+
+        private void renzoku_Checked(object sender, RoutedEventArgs e)
         {
-            if (renzoku.Checked)
-            {
-                OmikujiSystem.isRenzoku = true;
-            }
-            else
-            {
-                OmikujiSystem.isRenzoku = false;
-            }
+            OmikujiSystem.isRenzoku = true;
+
+        }
+
+        private void renzoku_Unchecked(object sender, RoutedEventArgs e)
+        {
+            OmikujiSystem.isRenzoku = false;
         }
     }
 }

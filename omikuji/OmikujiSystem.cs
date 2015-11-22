@@ -79,6 +79,7 @@ namespace omikuji
                     DialogResult res7 = MessageBox.Show("大々凶\n\nこの結果が出る確率は低いから、逆に運いいんじゃね");
                     if (res7 == DialogResult.OK)
                     {
+
                         endAction();
                     }
                     break;
@@ -91,11 +92,16 @@ namespace omikuji
 
         public static void endAction()
         {
+
+           
+            
             
 
             if (!isRenzoku)
             {
-                Application.Exit();
+                //MessageBox.Show("test");
+
+                Environment.Exit(0);
             }
 
 
